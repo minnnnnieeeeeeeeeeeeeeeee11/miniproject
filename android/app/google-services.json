@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "189474844971",
+    "project_id": "recipe-a8503",
+    "storage_bucket": "recipe-a8503.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189474844971:android:fcfb6012937f42bed9156e",
+        "android_client_info": {
+          "package_name": "io.minnie.dev.recipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189474844971-s514ifttiog3jt561o3m2ksu5rjovqr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARPBf00s7BREkadNs0x0H-Ba0VLNFyByU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189474844971-s514ifttiog3jt561o3m2ksu5rjovqr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

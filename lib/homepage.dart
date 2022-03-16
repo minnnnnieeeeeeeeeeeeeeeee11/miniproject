@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/explore.dart';
+import 'package:recipe/screens/login.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,9 +23,9 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               menuHeader(),
-              Padding(padding: EdgeInsets.only(bottom: 10)),
+              Padding(padding: EdgeInsets.only(bottom: 500)),
               // welcomeText(),
-              Padding(padding: EdgeInsets.only(bottom: 400)),
+              // Padding(padding: EdgeInsets.only(bottom: 200)),
               bottomBtn(),
             ],
           ),
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Explore(),
+                  builder: (context) => LoginScreen(),
                 ));
           },
           child: const Text(
@@ -66,38 +66,22 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // Column welcomeText() {
-  //   return Column(
-  //     // crossAxisAlignment: CrossAxisAlignment.center,
-  //     children: const [
-  //       Padding(padding: EdgeInsets.only(top: 30)),
-  //       Text(
-  //         'ยินดีต้อนรับเข้าสู่',
-  //         style: TextStyle(
-  //           fontWeight: FontWeight.bold,
-  //           fontSize: 29,
-  //           color: Colors.black,
-  //         ),
-  //       ),
-  //       Text(
-  //         'แอปพลิเคชันคำนวณ BMI',
-  //         style: TextStyle(
-  //           fontSize: 25,
-  //           color: Colors.black,
-  //         ),
-  //       ),
-  //     ],
-  //   );
-  // }
-
   Row menuHeader() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         TextButton.icon(
-          onPressed: () {},
-          icon: const Icon(Icons.help),
-          label: const Text('ความช่วยเหลือ'),
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => LoginScreen(),
+                ));
+          },
+          icon: const Icon(Icons.person),
+          label: const Text(
+            'Admin',
+          ),
           style: ButtonStyle(
             foregroundColor: MaterialStateProperty.all(Colors.white),
           ),
@@ -106,14 +90,6 @@ class _HomePageState extends State<HomePage> {
           width: 2,
           height: 20,
           color: Colors.white,
-        ),
-        TextButton.icon(
-          onPressed: () {},
-          icon: const Icon(Icons.info),
-          label: const Text('เกี่ยวกับแอป'),
-          style: ButtonStyle(
-            foregroundColor: MaterialStateProperty.all(Colors.white),
-          ),
         ),
       ],
     );
